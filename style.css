@@ -1,10 +1,12 @@
 body {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    width: auto;
-    max-width: 1024px;
-    background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  
 }
 
 .contenido {
@@ -17,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 200%;
     margin-top: 10px;
     min-height: 500px;
     border-radius: 20px;
@@ -50,8 +52,10 @@ body {
   background-image: url(img/zena.jpg);
   background-size: cover;
   display: flex;
+  justify-content: center;
   align-items: flex-end;
-  width: 100%;
+  flex-direction: row;
+  width: 200%;
   margin-top: 10px;
   min-height: 500px;
   border-radius: 20px;
@@ -94,6 +98,12 @@ a {
 
   .variosColores {
     animation: cambiarVariosColores 4s ease-in-out infinite alternate;
+    margin-right: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    background-color: rgba(255, 251, 0, 0.178);
+    
   }
   
   @keyframes cambiarVariosColores {
@@ -128,7 +138,16 @@ a {
       transform: rotateY(360deg) rotateZ(180deg);
     }
   }
+
   h1 {
     text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    background-color: #f72121;
+    border-radius: 20%;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   
