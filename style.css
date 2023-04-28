@@ -1,30 +1,48 @@
+/* Estilos para todo el body */
 body {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: black;
-  
+  margin: 0;
+  padding: 0;
 }
 
+/* Estilos para el contenedor principal */
 .contenido {
   max-width: 1024px;
+  padding: 20px;
 }
 
-.container {
-    background-image: url(img/oriental.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 200%;
-    margin-top: 10px;
-    min-height: 500px;
-    border-radius: 20px;
+/* Estilos para los contenedores de cada sección */
+.container,
+.container2 {
+  background-size: cover;
+  width: 100%;
+  margin-top: 20px;
+  min-height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
 }
 
+/* Estilos para el enlace de la primera sección */
+.colorChange a {
+  font-family:'Pacifico', cursive;
+  font-size: 1em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  margin-right: 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-decoration: none;
+  color: unset;
+  animation: colorChange 2s linear infinite alternate;
+}
+
+/* Estilos para la imagen animada de la primera sección */
 .chino {
   background-image: url(img/chino.jpg);
   width: 150px;
@@ -33,121 +51,11 @@ body {
   background-size: cover;
   animation: chinoAnimation 2s ease-in-out infinite alternate;
   animation-play-state: paused;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
-.chino:hover {
-  animation-play-state: running;
-}
+/* Estilos
 
-@keyframes chinoAnimation {
-  from {
-    height: 10px;
-  }
-  to {
-    height: 150px;
-  }
-}
-
-.container2 {
-  background-image: url(img/zena.jpg);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: row;
-  width: 200%;
-  margin-top: 10px;
-  min-height: 500px;
-  border-radius: 20px;
-}
-
-
-
-
-a {
-    font-family:'Pacifico', cursive;
-    font-size: 1em;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    padding: 15px 25px;
-    margin-right: 30%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    text-decoration: none;
-    color:unset;
-}
-
-.colorChange:hover {
-  animation-play-state: paused;
-}
-
-.colorChange {
-    animation: colorChange 2s linear infinite alternate;
-  }
-  
-  @keyframes colorChange {
-    from {
-      color: #f72121;
-    }
-    to {
-      color: #381cd6c9;
-      font-size: 1.5em;
-    }
-  }
-
-  .variosColores {
-    animation: cambiarVariosColores 4s ease-in-out infinite alternate;
-    margin-right: 30%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border-radius: 20px;
-    background-color: rgba(255, 251, 0, 0.178);
-    
-  }
-  
-  @keyframes cambiarVariosColores {
-    0% {
-      color: red;
-    }
-    20% {
-      color: blue;
-    }
-    40% {
-      color: yellow;
-    }
-    60% {
-      color: blueviolet;
-    }
-    80% {
-      color: orangered;
-    }
-    100% {
-      color: gray;
-    }
-  }
-
-  .smithers {
-    width: 170px;
-    height: 170px;
-    background-image: url(img/smithers.jpg);
-    animation: smithersAnimation 4s linear infinite;
-  }
-  @keyframes smithersAnimation {
-    to {
-      transform: rotateY(360deg) rotateZ(180deg);
-    }
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  h2 {
-    text-align: center;
-    background-color: #f72121;
-    border-radius: 20%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
   
